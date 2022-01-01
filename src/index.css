@@ -225,8 +225,27 @@ header h1 {
     border-radius: 1rem;
     transition-property: background-color;
     transition-duration: 300ms;
+    margin-bottom: 1rem;
 }
 .reset-app:hover {
+    background-color: #c71465;
+    cursor: pointer;
+}
+
+.reset-presupuesto {
+    border: none;
+    background-color: #db2777;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 1rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    }
+.reset-presupuesto:hover {
     background-color: #c71465;
     cursor: pointer;
 }

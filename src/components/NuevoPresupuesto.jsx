@@ -16,7 +16,7 @@ const NuevoPresupuesto = ({presupuesto, setPresupuesto, setIsValidPresupuesto}) 
     }
 
     return (
-        <div className='Contenedor-presupuesto contenedor somra'>
+        <div className='Contenedor-presupuesto contenedor sombra'>
 
             <form onSubmit={handlePresupuesto} className='formulario'>
              <div className='campo'>

@@ -49,6 +49,15 @@ export const ControlPresupuesto = ({
         } 
     }
 
+    const handleModificarPresupuesto = ()=> {
+        const resultado = confirm('¿Deseas modificar presupuesto');
+
+        if (resultado){
+            setPresupuesto(presupuesto)
+            setIsValidPresupuesto(false)
+        } 
+    }
+
     return (
         <div className='contenedor-presupuesto contenedor sombra dos-colmnas'>
            <div>
@@ -70,8 +79,16 @@ export const ControlPresupuesto = ({
                 >
                     Restear App
                 </button>
+                <button
+                className='reset-presupuesto'
+                type='button'
+                onClick={handleModificarPresupuesto}
+                >
+                    Modificar Presupuesto
+                </button>
                 <p>
                     <span>Presupuesto: </span>{formatearCantidad(presupuesto)}
+                                                        
                 </p>
 
                 <p className={`${disponible < 0 ? 'negativo' : ''}`}>
